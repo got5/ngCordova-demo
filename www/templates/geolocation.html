@@ -1,0 +1,27 @@
+<ion-view title="Geolocation">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header center">
+    <h1>Geolocation</h1>
+      <p class="description">
+          This plugin provides information about the device's location, such as latitude and longitude.
+          Common sources of location information include Global Positioning System (GPS) and location inferred from network signals such as IP address,
+          RFID, WiFi and Bluetooth MAC addresses,
+          and GSM/CDMA cell IDs. There is no guarantee that the API returns the device's actual location.
+      </p>
+      <div>
+          <strong>getCurrentPosition</strong> <br/>
+          latitude : {{lat}} <br/>
+          longitude : {{long}} <br/>
+      </div>
+      <br />
+      <div>
+          <strong>watchPosition </strong> <br/>
+          latitude : {{watchLat}} <br/>
+          longitude : {{watchLong}} <br/>
+          <br />
+      </div>
+
+  </ion-content>
+</ion-view>

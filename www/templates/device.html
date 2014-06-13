@@ -1,0 +1,21 @@
+<ion-view title="Device">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left"class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header center">
+    <h1>Device</h1>
+      <p class="description">
+          This plugin defines a global device object, which describes the device's hardware and software.
+          Although the object is in the global scope, it is not available until after the deviceready event.
+      </p>
+    <p>
+        <strong>Device</strong> : {{device}}<br/>
+        <strong></strong> : {{cordova}}<br/>
+        <strong>Model</strong> : {{model}}<br/>
+        <strong>Platform</strong> : {{platform}}<br/>
+        <strong>Uuid</strong> : {{uuid}}<br/>
+        <strong>Version</strong> : {{version}}<br/>
+    </p>
+
+  </ion-content>
+</ion-view>

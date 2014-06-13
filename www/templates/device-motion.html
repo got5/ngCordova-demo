@@ -1,0 +1,27 @@
+<ion-view title="Device Motion">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header center">
+    <h1>Device Motion</h1>
+      <p class="description">
+          This plugin provides access to the device's accelerometer. The accelerometer is a motion sensor that detects
+          the change (delta) in movement relative to the current device orientation,
+          in three dimensions along the x, y, and z axis.
+      </p>
+    <div ng-init="getAcceleration();">
+        <strong>getCurrentAcceleration</strong> <br/>
+        current X : {{getCurrentAccelerationX}} <br/>
+        current Y : {{getCurrentAccelerationY}} <br/>
+        current Z : {{getCurrentAccelerationZ}} <br/>
+    </div>
+    <br />
+    <div ng-init="watchAcceleration();">
+        <strong>watchAcceleration (update every 1 seconds)</strong> <br/>
+        X : {{X}} <br/>
+        Y : {{Y}} <br/>
+        Z : {{Z}} <br/>
+    <br />
+    </div>
+  </ion-content>
+</ion-view>

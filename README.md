@@ -1,2 +1,6 @@
-ngCordova-demo
-==============
+Ng-Cordova demo app
+=====================
+
+
+
+

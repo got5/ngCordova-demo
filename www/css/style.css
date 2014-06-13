@@ -1,0 +1,10 @@
+/* Empty. Add your own CSS if you like */
+.center{
+    text-align: center;
+    margin: 5px;
+}
+
+.description{
+    text-align: justify;
+    font-style: italic;
+}
