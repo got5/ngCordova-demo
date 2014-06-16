@@ -2,7 +2,7 @@ angular.module('app')
 
 .controller('FileCtrl', function($scope, $cordovaFile) {
 
-        $scope.directory = window.resolveLocalFileSystemURL();
+        //$scope.directory = window.resolveLocalFileSystemURL();
 
         $scope.checkDir = function() {
             $cordovaFile.checkDir(directory).then(function (result) {
