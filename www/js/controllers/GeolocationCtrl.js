@@ -2,6 +2,7 @@ angular.module('app')
 
 .controller('GeolocationCtrl', function($scope, $cordovaGeolocation) {
 
+
             $cordovaGeolocation.getCurrentPosition().then(function (position) {
                     $scope.lat = position.coords.latitude;
                     $scope.long = position.coords.longitude;

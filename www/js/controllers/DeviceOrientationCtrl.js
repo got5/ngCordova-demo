@@ -2,7 +2,7 @@ angular.module('app')
 
 .controller('DeviceOrientationCtrl', function($scope, $cordovaDeviceOrientation) {
 
-    $scope.getCurrentHeading = function(){
+  /*  $scope.getCurrentHeading = function(){
 
         $cordovaDeviceOrientation.getCurrentHeading().then(function(result) {
             // Success!
@@ -14,7 +14,7 @@ angular.module('app')
             // An error occured. Show a message to the user
         });
     };
-
+*/
     $scope.watchHeading = function(){
         var options = { frequency: 1000 }; // Update every 1 seconds
 
@@ -28,7 +28,7 @@ angular.module('app')
             alert('Compass error: ' + err.code);
         });
     };
-
+/*
     // use the watch ID from watchHeading() promise
     $scope.clear = function(){
         $cordovaDeviceOrientation.clearWatch(watchID).then(function(result) {
@@ -36,7 +36,7 @@ angular.module('app')
         }, function(err) {
             // An error occured. Show a message to the user
         });
-    }
+    }*/
 });
 
 

@@ -7,7 +7,7 @@
       <p class="description">This plugin provides access to the device's compass. The compass is a sensor that detects the direction or
           heading that the device is pointed,
           typically from the top of the device. It measures the heading in degrees from 0 to 359.99, where 0 is north.</p>
-      <div >
+      <div>
           <strong>getCurrentHeading</strong> <br/>
            MagneticHeading : {{magneticHeading}} <br/>
            TrueHeading : {{trueHeading}} <br/>
@@ -15,7 +15,7 @@
 
       </div>
       <br />
-      <div >
+      <div ng-init="watchHeading();">
           <strong>watchHeading (update every 1 seconds)</strong> <br/>
           MagneticHeading : {{watchmagneticHeading}} <br/>
           TrueHeading : {{watchtrueHeading}} <br/>

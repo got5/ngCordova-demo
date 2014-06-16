@@ -111,7 +111,7 @@ var app = angular.module('app', ['ionic','ngCordova'])
              views: {
              'menuContent' :{
              templateUrl: "templates/file.html",
-                 controller: 'CameraCtrl'
+                 controller: 'FileCtrl'
              }
              }
              })
@@ -137,16 +137,6 @@ var app = angular.module('app', ['ionic','ngCordova'])
              }
              })
 
-             .state('app.ionic-keyboard', {
-             url: "/ionic-keyboard",
-             views: {
-             'menuContent' :{
-             templateUrl: "templates/ionic-keyboard.html",
-                 controller: 'CameraCtrl'
-             }
-             }
-             })
-
              .state('app.network', {
              url: "/network",
              views: {
@@ -163,26 +153,6 @@ var app = angular.module('app', ['ionic','ngCordova'])
              'menuContent' :{
              templateUrl: "templates/pin-dialog.html",
                  controller: 'PinDialogCtrl'
-             }
-             }
-             })
-
-             .state('app.push-notification', {
-             url: "/push-notification",
-             views: {
-             'menuContent' :{
-             templateUrl: "templates/push-notification.html",
-                 controller: 'PushCtrl'
-             }
-             }
-             })
-
-             .state('app.scanner', {
-             url: "/scanner",
-             views: {
-             'menuContent' :{
-             templateUrl: "templates/scanner.html",
-                 controller: 'CameraCtrl'
              }
              }
              })
@@ -213,26 +183,6 @@ var app = angular.module('app', ['ionic','ngCordova'])
              'menuContent' :{
              templateUrl: "templates/splashscreen.html",
                  controller: 'SplashScreenCtrl'
-             }
-             }
-             })
-
-             .state('app.sql-lite', {
-             url: "/sql-lite",
-             views: {
-             'menuContent' :{
-             templateUrl: "templates/sql-lite.html",
-                 controller: 'CameraCtrl'
-             }
-             }
-             })
-
-             .state('app.statusbar', {
-             url: "/statusbar",
-             views: {
-             'menuContent' :{
-             templateUrl: "templates/statusbar.html",
-                 controller: 'StatusBarCtrl'
              }
              }
              })
